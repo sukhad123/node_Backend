@@ -103,7 +103,7 @@ app.post("/signIn",(req,res) =>
 
 
 
-app.use('/', (req, res) => {
+app.get('/', (req, res) => {
     // Redirect to the React server running at http://localhost:5000
     res.send("Hi this is from backend");
 });
