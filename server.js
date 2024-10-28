@@ -104,7 +104,7 @@ app.post("/signIn",(req,res) =>
 
 
 app.use('/', (req, res) => {
-    // Redirect to the React server running at http://localhost:3000
+    // Redirect to the React server running at http://localhost:5000
     res.send("Hi this is from backend");
 });
  
@@ -115,3 +115,6 @@ userService.connect().then(() => {
         console.log("unable to start the server: " + err);
         process.exit();
     });
+
+
+    module.exports = app;
